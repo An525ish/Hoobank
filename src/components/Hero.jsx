@@ -12,10 +12,10 @@ const Hero = () => {
                         <p className='uppercase text-grey'>20% <span className='text-slate-400'> discount for</span>  1 month <span className='text-slate-400'>account </span></p>
                     </div>
 
-                    <div className="moto text-white relative flex">
+                    <div className="moto text-white relative flex ">
                         <p className='xs:text-[7vw] md:text-[5rem] capitalize font-semibold leading-tight'>The next <span className='text-gradient'>generation </span>
                         payment method</p>
-                        <div className=' lg:block lg:absolute top-5 right-[10rem] xs:hidden'>
+                        <div className=' lg:block xl:absolute top-5 right-[8vw] xs:hidden '>
                             <GetStarted />
                         </div>    
                     </div>

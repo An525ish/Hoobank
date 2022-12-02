@@ -1,11 +1,12 @@
 import React from 'react'
+import { logo, menu, close } from '../assets'
 import { useState } from 'react'
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
 
     return (
         <nav className="navbar flex flex-row justify-between items-center p-8 bg-primary text-white font-poppins">
-            <div className="logo w-40"><img src="./src/assets/logo.svg" alt="" /></div>
+            <div className="logo w-40"><img src={logo} alt="" /></div>
 
             <div className="items">
                 <ul className='list-none md:flex hidden px-10 text-lg'>
@@ -18,7 +19,7 @@ const Navbar = () => {
 
             <div className="flex-col md:hidden cursor-pointer">
                 <img
-                    src={toggle ? './src/assets/close.svg' : './src/assets/menu.svg'}
+                    src={toggle ? close : menu}
                     alt="menu"
                     className='w-8'
                     onClick={() => setToggle((prev) => !prev)}
